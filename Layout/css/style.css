@@ -57,3 +57,7 @@ a:hover {
 input[type="search"]:focus {
   border-color: #34495e;
 }
+footer {
+  text-align: center;
+  width: 100%;
+}
