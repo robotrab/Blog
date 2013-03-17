@@ -1,0 +1,43 @@
+@body-color: #BDC3C7;
+@block-color: #ECF0F1;
+
+body {
+	background: @body-color;
+}
+
+.post {
+	border-radius: 5px;
+	background: @block-color;
+	margin-bottom: 20px;
+	padding: 8px;
+	p {
+		font-size: 16px;
+		line-height: 1.4em;
+		letter-spacing: 0.1em;
+	}
+
+	h2 {
+		margin: 0;
+		margin-bottom: 5px;
+	}
+}
+
+nav ul{
+	margin: auto;
+	text-align: center;
+}
+
+.nav-section {
+	list-style: none;
+
+	li {
+		text-transform: uppercase;
+		font-size: 18px;
+		margin-bottom: 10px;
+		border-top: 1px solid @body-color;
+		border-bottom: 1px solid @body-color;
+	}
+	li:last-child {
+		border: 0;
+	}
+}
