@@ -12,52 +12,59 @@
     <link href="css/flat-ui.css" rel="stylesheet">
     <link rel="shortcut icon" href="images/favicon.ico">
 
+    <link href="css/style.css" rel="stylesheet">
+
     <!-- HTML5 shim, for IE6-8 support of HTML5 elements. All other JS at the end of file. -->
     <!--[if lt IE 9]>
       <script src="js/html5shiv.js"></script>
     <![endif]-->
   </head>
   <body>
+    <div class="container">
+      <header class="demo-headline">
+        <h1 class="demo-logo">Rob Brown</h1>
+      </header>
 
-    <header>
-      <h1>Rob Brown</h1>
-    </header>
+      <div class="row">
+        <section class="span8">
+          <article class="row post">
+            <h2>Blog Post 1</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec tincidunt ante ut dui sagittis elementum. Cras molestie venenatis justo quis gravida. Nam ornare varius mauris, id bibendum dui accumsan eget. Vestibulum eu tortor mi. Morbi feugiat nibh sed ipsum egestas lacinia. Fusce quis arcu elit, in auctor nulla. Phasellus vel augue ac dui accumsan bibendum ac vitae nisi.</p>
+            <button class="btn btn-large btn-block">See More</button>
+          </article>
+          <article class="row post">
+            <h2>Blog Post 2</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec tincidunt ante ut dui sagittis elementum. Cras molestie venenatis justo quis gravida. Nam ornare varius mauris, id bibendum dui accumsan eget. Vestibulum eu tortor mi. Morbi feugiat nibh sed ipsum egestas lacinia. Fusce quis arcu elit, in auctor nulla. Phasellus vel augue ac dui accumsan bibendum ac vitae nisi.</p>
+            <button class="btn btn-large btn-block">See More</button>
+          </article>
+          <article class="row post">
+            <h2>Blog Post 3</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec tincidunt ante ut dui sagittis elementum. Cras molestie venenatis justo quis gravida. Nam ornare varius mauris, id bibendum dui accumsan eget. Vestibulum eu tortor mi. Morbi feugiat nibh sed ipsum egestas lacinia. Fusce quis arcu elit, in auctor nulla. Phasellus vel augue ac dui accumsan bibendum ac vitae nisi.</p>
+            <button class="btn btn-large btn-block">See More</button>
+          </article>
+        </section>
 
-    <section>
-      <article>
-        <h2>Blog Post 1</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec tincidunt ante ut dui sagittis elementum. Cras molestie venenatis justo quis gravida. Nam ornare varius mauris, id bibendum dui accumsan eget. Vestibulum eu tortor mi. Morbi feugiat nibh sed ipsum egestas lacinia. Fusce quis arcu elit, in auctor nulla. Phasellus vel augue ac dui accumsan bibendum ac vitae nisi.</p>
-        <button>See More</button>
-      </article>
-      <article>
-        <h2>Blog Post 2</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec tincidunt ante ut dui sagittis elementum. Cras molestie venenatis justo quis gravida. Nam ornare varius mauris, id bibendum dui accumsan eget. Vestibulum eu tortor mi. Morbi feugiat nibh sed ipsum egestas lacinia. Fusce quis arcu elit, in auctor nulla. Phasellus vel augue ac dui accumsan bibendum ac vitae nisi.</p>
-        <button>See More</button>
-      </article>
-      <article>
-        <h2>Blog Post 3</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec tincidunt ante ut dui sagittis elementum. Cras molestie venenatis justo quis gravida. Nam ornare varius mauris, id bibendum dui accumsan eget. Vestibulum eu tortor mi. Morbi feugiat nibh sed ipsum egestas lacinia. Fusce quis arcu elit, in auctor nulla. Phasellus vel augue ac dui accumsan bibendum ac vitae nisi.</p>
-        <button>See More</button>
-      </article>
-    </section>
-
-    <aside>
-      <nav>
-        <ul>
-          <li>Home</li>
-          <li>Robbrown.co</li>
-          <li>Facebook</li>
-          <li>Twitter</li>
-          <li>LinkedIn</li>
-          <li>GitHub</li>
-          <li><input type="text" value="Search" /></li>
-        </ul>
-      </nav>
-    </aside>
-
+        <aside class="span4">
+          <div class="post">              
+            <nav> 
+              <ul class="nav-section">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Robbrown.co</a></li>
+                <li><a href="#">Facebook</a></li>
+                <li><a href="#">Twitter</a></li>
+                <li><a href="#">LinkedIn</a></li>
+                <li><a href="#">GitHub</a></li>
+                <li><input type="search" value="Search" /></li>
+              </ul>
+            </nav>
+          </div>
+        </aside>
+      </div>
+    </div>
     <footer>
-      Rob Brown
+      <span>Rob Brown</span>
     </footer>
+
 
 
 
@@ -69,7 +76,6 @@
   <script src="js/jquery.tagsinput.js"></script>
   <script src="js/bootstrap-tooltip.js"></script>
   <script src="js/jquery.placeholder.js"></script>
-  <script src="http://vjs.zencdn.net/c/video.js"></script>
   <script src="js/application.js"></script>
   <!--[if lt IE 8]>
     <script src="js/icon-font-ie7.js"></script>
