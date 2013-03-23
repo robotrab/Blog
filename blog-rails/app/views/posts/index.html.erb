@@ -1,4 +1,15 @@
-<h1>Listing posts</h1>
+<div class="row">
+        <section class="span8">
+          <% @posts.each do |post| %>
+          <article class="row post">
+            <h2><%= post.title %>Test</h2>
+            <%= post.name %>
+            <p><%= post.content %>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec tincidunt ante ut dui sagittis elementum. Cras molestie venenatis justo quis gravida. Nam ornare varius mauris, id bibendum dui accumsan eget. Vestibulum eu tortor mi. Morbi feugiat nibh sed ipsum egestas lacinia. Fusce quis arcu elit, in auctor nulla. Phasellus vel augue ac dui accumsan bibendum ac vitae nisi.</p>
+            <button class="btn btn-large btn-block"><%= link_to 'Show', post %>See More</button>
+          </article>
+          <% end %>
+        </section>
+  <%= render 'layouts/nav' %>
 
 <table>
   <tr>

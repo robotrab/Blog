@@ -1,16 +1,30 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>BlogRails</title>
+  <title>Blog from Rob</title>
   <%= stylesheet_link_tag    "application", :media => "all" %>
   <%= stylesheet_link_tag    "bootstrap", :media => "all" %>
   <%= stylesheet_link_tag    "flat-ui", :media => "all" %>
+  <%= stylesheet_link_tag    "style", :media => "all" %>
   <%= javascript_include_tag "application" %>
   <%= csrf_meta_tags %>
 </head>
 <body>
-
+	<div class="container">
+    <div class="row">
+      <header>
+        <h1 class="demo-logo">A Blog About Stuff</h1>
+      </header>
+    </div><!-- End Row -->
 <%= yield %>
+	</div><!-- End Container -->
+    <footer>
+      <span>Rob Brown</span>
+    </footer>
 
+  <%= javascript_include_tag "jquery-1.8.2.min" %>
+	<%= javascript_include_tag "jquery-ui-1.10.0.custom.min" %>
+  <%= javascript_include_tag "jquery.dropkick-1.0.0" %>
+  <%= javascript_include_tag "bootstrap-tooltip" %>
 </body>
 </html>
