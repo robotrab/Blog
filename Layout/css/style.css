@@ -25,18 +25,14 @@ nav ul {
 }
 .nav-section li {
   font-weight: 700;
-  padding: 5px;
   text-transform: uppercase;
   font-size: 18px;
-  margin-bottom: 10px;
-  border-top: 1px solid #bdc3c7;
-  border-bottom: 1px solid #bdc3c7;
+  margin-top: 2px;
+  margin-bottom: 2px;
 }
 .nav-section li:hover {
   background: #bdc3c7;
   color: #34495e;
-  border-top: 1px solid #34495e;
-  border-bottom: 1px solid #34495e;
   -webkit-transition: 0.25s;
   -moz-transition: 0.25s;
   -o-transition: 0.25s;
@@ -60,4 +56,17 @@ input[type="search"]:focus {
 footer {
   text-align: center;
   width: 100%;
+}
+hr {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  height: 1px;
+  background: #333333;
+  background: -webkit-gradient(linear, left top, right top, color-stop(0%, transparent), color-stop(50%, rgba(0, 0, 0, 0.75)), color-stop(100%, transparent));
+  background: -webkit-linear-gradient(left, transparent 0%, rgba(0, 0, 0, 0.75) 50%, transparent 100%);
+  background: -moz-linear-gradient(left, transparent 0%, rgba(0, 0, 0, 0.75) 50%, transparent 100%);
+  background: -ms-linear-gradient(left, transparent 0%, rgba(0, 0, 0, 0.75) 50%, transparent 100%);
+  background: -o-linear-gradient(left, transparent 0%, rgba(0, 0, 0, 0.75) 50%, transparent 100%);
+  background: linear-gradient(left, transparent 0%, rgba(0, 0, 0, 0.75) 50%, transparent 100%);
 }
