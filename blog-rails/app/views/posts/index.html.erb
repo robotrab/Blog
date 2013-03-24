@@ -2,8 +2,8 @@
 	<article class="row post">
   	<h2><%= post.title %></h2>
     <h4><%= post.name %></h4>
-    <p><%= post.content %></p>
-    <button class="btn btn-large btn-block"><%= link_to 'See More', post %></button>
+    <p><%= sanitize(truncate(post.content, :length => 200)) %></p>
+    <%= button_to "See More", post, :class => "btn btn-large btn-block", :method => :get %>
   </article>
 <% end %>
 

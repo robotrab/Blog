@@ -1,5 +1,4 @@
 class CommentsController < ApplicationController
-  
   http_basic_authenticate_with :name => "Rob", :password => "secret", :only => destroy
   
   def create
@@ -14,5 +13,4 @@ class CommentsController < ApplicationController
     @comment.destroy
     redirect_to post_path(@post)
   end
-  
 end
