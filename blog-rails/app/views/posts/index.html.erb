@@ -1,37 +1,11 @@
-<div class="row">
-        <section class="span8">
-          <% @posts.each do |post| %>
-          <article class="row post">
-            <h2><%= post.title %>Test</h2>
-            <%= post.name %>
-            <p><%= post.content %>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec tincidunt ante ut dui sagittis elementum. Cras molestie venenatis justo quis gravida. Nam ornare varius mauris, id bibendum dui accumsan eget. Vestibulum eu tortor mi. Morbi feugiat nibh sed ipsum egestas lacinia. Fusce quis arcu elit, in auctor nulla. Phasellus vel augue ac dui accumsan bibendum ac vitae nisi.</p>
-            <button class="btn btn-large btn-block"><%= link_to 'Show', post %>See More</button>
-          </article>
-          <% end %>
-        </section>
-  <%= render 'layouts/nav' %>
-
-<table>
-  <tr>
-    <th>Name</th>
-    <th>Title</th>
-    <th>Content</th>
-    <th></th>
-    <th></th>
-    <th></th>
-  </tr>
-
 <% @posts.each do |post| %>
-  <tr>
-    <td><%= post.name %></td>
-    <td><%= post.title %></td>
-    <td><%= post.content %></td>
-    <td><%= link_to 'Show', post %></td>
-    <td><%= link_to 'Edit', edit_post_path(post) %></td>
-    <td><%= link_to 'Destroy', post, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-  </tr>
+	<article class="row post">
+  	<h2><%= post.title %></h2>
+    <h4><%= post.name %></h4>
+    <p><%= post.content %></p>
+    <button class="btn btn-large btn-block"><%= link_to 'See More', post %></button>
+  </article>
 <% end %>
-</table>
 
 <br />
 
