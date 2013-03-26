@@ -23,6 +23,10 @@ body {
 	}
 }
 
+textarea {
+	resize: none;
+	width: 85%;
+}
 
 nav ul{
 	margin: auto;
@@ -71,13 +75,20 @@ a:hover {
 	color: white;
 }
 
+article {
+	text-align: justify;
+}
+
 input[type="search"]:focus {
 	border-color: @active-color;
 }
 
 footer {
+	z-index: 5;
+	position: absolute;
 	text-align: center;
 	width: 100%;
+	bottom: 0;
 }
 
 hr {

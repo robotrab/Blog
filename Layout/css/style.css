@@ -16,6 +16,10 @@ body {
   margin: 0;
   margin-bottom: 5px;
 }
+textarea {
+  resize: none;
+  width: 85%;
+}
 nav ul {
   margin: auto;
   text-align: center;
@@ -51,12 +55,18 @@ a:hover {
   background-color: transparent;
   color: white;
 }
+article {
+  text-align: justify;
+}
 input[type="search"]:focus {
   border-color: #34495e;
 }
 footer {
+  z-index: 5;
+  position: absolute;
   text-align: center;
   width: 100%;
+  bottom: 0;
 }
 hr {
   padding: 0;
