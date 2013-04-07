@@ -1,4 +1,6 @@
 BlogRails::Application.routes.draw do
+  get "users/new"
+
   resources :posts do
     resources :comments
   end
