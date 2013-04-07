@@ -1,5 +1,6 @@
 BlogRails::Application.routes.draw do
-  get "users/new"
+  get "sign_up" => "users#new", :as => "sign_up"
+  resources :users
 
   resources :posts do
     resources :comments
