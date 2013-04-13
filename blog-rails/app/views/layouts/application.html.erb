@@ -16,6 +16,11 @@
         <h1 class="demo-logo">A Blog About Stuff</h1>
       </header>
     </div><!-- End Row -->
+    
+    <% flash.each do |name, msg| %>
+      <%= content_tag :div, msg, :id => "flash_#{name}" %>
+    <% end %>
+    
     <div class="row">
         <section class="span8">
 				<%= yield %>
@@ -24,6 +29,14 @@
           <div class="post">              
             <nav> 
               <ul class="nav-section">
+                <hr>
+                <% if current_user %>
+                  <li>Logged in as <%= current_user.email %>.
+                  <%= link_to "Log out", log_out_path %></li>
+                <% else %>
+                  <li><%= link_to "Sign up", sign_up_path %>
+                  <%= link_to "Log in", log_in_path %></li>
+                <% end %>
                 <hr>
                 <li><a href="#">Home</a></li>
                 <hr>
